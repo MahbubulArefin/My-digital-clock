@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret One");
+
+body {
+  font-family: "Poiret one", cursive;
+  /* font-weight: bolder; */
+  overflow: hidden;
+  background: conic-gradient(
+    from 90deg at 40% -25%,
+    #ffd700,
+    #f79d03,
+    #ee6907,
+    #e6390a,
+    #de0d0d,
+    #d61039,
+    #cf1261,
+    #c71585,
+    #cf1261,
+    #d61039,
+    #de0d0d,
+    #ee6907,
+    #f79d03,
+    #ffd700,
+    #ffd700,
+    #ffd700
+  );
+}
+
+.container {
+  border: 1px solid black;
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitalclock {
+  /*border: 2px solid black;*/
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 3px;
+  color: aliceblue;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.digitalclock h1 {
+  /* font-style: italic; */
+  display: inline-block;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  #bar1,
+  #bar2 {
+    display: none;
+  }
+  .digitalclock {
+    text-align: center;
+    width: 100%;
+  }
+  .digitalclock h1 {
+    display: block;
+  }
+}
